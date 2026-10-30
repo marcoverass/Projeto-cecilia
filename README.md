@@ -4,7 +4,7 @@ Aplicação web em português para centralizar solicitações entre os setores d
 
 HTML, CSS e JavaScript nativos: não exige Node, npm, compilação ou domínio próprio. Os caminhos relativos permitem publicar em um subdiretório do GitHub Pages.
 
-Repositório de destino: [marcoverass/Projeto-cecilia](https://github.com/marcoverass/Projeto-cecilia). A URL prevista **depois da ativação do Pages e de um deployment bem-sucedido** é `https://marcoverass.github.io/Projeto-cecilia/`; essa indicação não confirma publicação.
+**Site publicado:** [Abrir Entre setores](https://marcoverass.github.io/Projeto-cecilia/). Repositório: [marcoverass/Projeto-cecilia](https://github.com/marcoverass/Projeto-cecilia). O Pages está ativo, sem domínio próprio. O repositório permanece privado e o site é acessível pelo link.
 
 ## Executar no computador
 
@@ -22,7 +22,7 @@ Sem a configuração de produção, a tela de entrada oferece perfis de demonstr
 
 O modo de produção utiliza **Supabase Auth e PostgreSQL**, com acesso validado no servidor. O GitHub Pages hospeda os arquivos do site; ele não fornece servidor de aplicação ou banco de dados. Para ativar o uso real, siga [docs/PRODUCAO.md](docs/PRODUCAO.md): executar o esquema SQL, provisionar contas e perfis e preencher `config.js` com a URL do projeto e sua chave pública. Nunca coloque uma chave `service_role`, senha de banco ou token do GitHub em arquivos do site.
 
-O site não foi publicado apenas por estar nesta pasta. A publicação requer um repositório GitHub e a ativação do Pages nessa conta.
+O ambiente publicado está em demonstração, pois ainda não existe um projeto Supabase configurado. O código para o uso real e o esquema do banco estão incluídos; a demonstração não compartilha dados entre computadores.
 
 ## Publicar sem domínio no GitHub Pages
 
