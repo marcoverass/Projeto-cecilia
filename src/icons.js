@@ -1,0 +1,30 @@
+const paths = {
+  grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+  inbox: '<path d="M4 4h16l2 10v6H2v-6L4 4Z"/><path d="M2 14h6l2 3h4l2-3h6"/>',
+  chart: '<path d="M4 3v17h17M9 15V9m5 6V5m5 10v-5"/>',
+  bell: '<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
+  back: '<path d="M19 12H5m5-5-5 5 5 5"/>',
+  chevron: '<path d="m9 5 7 7-7 7"/>',
+  down: '<path d="m6 9 6 6 6-6"/>',
+  check: '<path d="m5 12 4 4L19 6"/>',
+  circlecheck: '<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  message: '<path d="M21 11.5a8.4 8.4 0 0 1-9 8.5c-1.5 0-3-.3-4.2-1L3 21l1.5-5A8.5 8.5 0 1 1 21 11.5Z"/>',
+  attach: '<path d="m9 12 6-6a3.5 3.5 0 0 1 5 5l-8 8a5 5 0 0 1-7-7l8-8M8 15l7-7"/>',
+  file: '<path d="M14 2H5v20h14V7l-5-5Z"/><path d="M14 2v6h5M8 13h8m-8 4h5"/>',
+  close: '<path d="m6 6 12 12M6 18 18 6"/>',
+  logout: '<path d="M10 4H4v16h6m4-13 5 5-5 5m-6-5h11"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.5 8.5a2.5 2.5 0 1 1 4 2c-1 .7-1.5 1-1.5 2.5M12 17h.01"/>',
+  external: '<path d="M13 3h8v8M21 3 10 14M9 3H3v18h18v-6"/>',
+  download: '<path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/>',
+  shield: '<path d="m12 2 8 3v7c0 5-8 10-8 10S4 17 4 12V5l8-3Z"/><path d="m8 11 3 3 5-6"/>',
+  person: '<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>',
+  filter: '<path d="M4 7h16M7 12h10m-7 5h4"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>',
+};
+export function icon(name, cls = '') {
+  return `<svg class="icon ${cls}" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.file}</svg>`;
+}
